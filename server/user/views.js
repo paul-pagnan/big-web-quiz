@@ -323,6 +323,7 @@ export async function questionAnswerJson(req, res) {
     res.json({});
   }
   catch (e) {
+    console.log(e);
     res.status(500).json({err: "Unknown error"});
   }
 }

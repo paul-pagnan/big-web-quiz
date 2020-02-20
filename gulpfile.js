@@ -72,10 +72,10 @@ const paths = {
 };
 
 const serverProcess = respawn(['node', `${paths.serverScripts.dest}/index.js`]);
-const databaseProcess = respawn(['docker', 'start', '-a', 'bwq-mongo']);
+// const databaseProcess = respawn(['docker', 'start', '-a', 'bwq-mongo']);
 
 // hook up the logging
-for (const process of [serverProcess, databaseProcess]) {
+for (const process of [serverProcess]) {
   process.on('stdout', data => gutil.log(data.toString('utf-8')));
   process.on('stderr', data => gutil.log(data.toString('utf-8')));
   process.on('warn', data => gutil.log(data.toString('utf-8')));
@@ -84,15 +84,15 @@ for (const process of [serverProcess, databaseProcess]) {
 // shut down gracefully
 process.on('SIGINT', () => {
   serverProcess.stop(() => {
-    databaseProcess.stop(() => {
-      process.exit();
-    });
+    // databaseProcess.stop(() => {
+    //   process.exit();
+    // });
   });
 });
 
 process.on('uncaughtException', () => {
   serverProcess.stop();
-  databaseProcess.stop();
+  // databaseProcess.stop();
 });
 
 // TASKS:
@@ -142,7 +142,7 @@ function server() {
 }
 
 function databaseServer() {
-  databaseProcess.start();
+  // databaseProcess.start();
 }
 
 function serverRestart(cb) {
