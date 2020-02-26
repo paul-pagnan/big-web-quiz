@@ -50,9 +50,9 @@ export default class Code extends BoundComponent {
   componentDidUpdate() {
     this.highlightCode();
   }
-  render({code, codeType}) {
+  render({code, codeType, className = '', style = ''}) {
     return (
-      <div class="question__code-container">
+      <div class={"question__code-container " + className} style={'margin-bottom: 0; ' + style}>
         <pre class="question__code" ref={el => this.pre = el} class={`language-${codeType}`}>
           <code>{code}</code>
         </pre>

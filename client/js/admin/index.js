@@ -386,6 +386,7 @@ class App extends BoundComponent {
                       codeType={question.codeType}
                       multiple={question.multiple}
                       scored={question.scored}
+                      codeAnswers={question.codeAnswers}
                       priority={question.priority}
                       answers={question.answers}
                       onQuestionSaved={this.onQuestionSaved}
@@ -426,6 +427,10 @@ class App extends BoundComponent {
                     <tr>
                       <td>Priority:</td>
                       <td>{String(question.priority)}</td>
+                    </tr>
+                    <tr>
+                      <td>Code Answers:</td>
+                      <td>{String(question.codeAnswers)}</td>
                     </tr>
                     <tr>
                       <td>Answers:</td>

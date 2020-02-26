@@ -200,25 +200,26 @@ const adminIds = [
 ];
 
 export function requiresAdminHtml(req, res, next) {
-  const err = requiresAdmin(req);
+  // const err = requiresAdmin(req);
 
-  if (err) {
-    res.status(403).send(err);
-    return;
-  }
+  // if (err) {
+  //   res.status(403).send(err);
+  //   return;
+  // }
 
   next();
 }
 
 export function requiresAdminJson(req, res, next) {
-  const err = requiresAdmin(req);
-
-  if (err) {
-    res.status(403).json({err});
-    return;
-  }
-
   next();
+  // const err = requiresAdmin(req);
+
+  // if (err) {
+  //   res.status(403).json({err});
+  //   return;
+  // }
+
+  // next();
 }
 
 export function requiresLogin(req, res, next) {

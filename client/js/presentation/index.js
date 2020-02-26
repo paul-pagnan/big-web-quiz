@@ -145,14 +145,18 @@ class App extends BoundComponent {
         <div>
           <img src="/static/images/title.png" class="opening-media opening-media--show"/>
           <div class={`blackout ${showBlackout ? 'blackout--show' : ''}`}/>
-          <div class={`opening-media ${showVideo == 'intro' ? 'opening-media--show' : ''}`}>
+          <div class={`opening-media ${showVideo == 'intro' ? 'opening-media--show' : ''}`} style='background-color: white;'>
+            <div style='width: 600px; text-align: center; margin: auto; margin-top: 300px;'>
+              <div><img src="/static/images/lumi-h.svg"  /></div>
+              <h1 style='font-size: 55px; color: #333'>Engineering Quiz</h1>
+            </div>
           </div>
           <div class={`opening-media ${showVideo == 'prize' ? 'opening-media--show' : ''}`}>
           </div>
         </div>
       );
     }
-
+// console.log(question);
     return (
       <div>
         <Question
@@ -165,6 +169,7 @@ class App extends BoundComponent {
           code={question.code}
           codeType={question.codeType}
           closed={questionClosed}
+          codeAnswers={question.codeAnswers}
           correctAnswers={correctAnswers}
           showLiveResults={showLiveResults}
           presentation={true}
@@ -177,6 +182,7 @@ class App extends BoundComponent {
                 color={colors[j % colors.length]}
                 questionClosed={questionClosed}
                 text={question.answers[i].text}
+                codeAnswers={question.codeAnswers}
                 key={`avg-${question.id}-answer-${i}`}
                 targetValue={averages[i]} />
             )}

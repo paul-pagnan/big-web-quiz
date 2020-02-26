@@ -62,11 +62,11 @@ export default class EventStream {
   add(req, res) {
     const lastEventId = Number(req.get('Last-Event-ID')) || 0;
 
-    // Allowing admin to make too many connections for testing purposes
-    if (!req.user.isAdmin() && this.countListenersForUser(req.user) > 10) {
-      res.status(429).json({err: 'Too many open polling requests'});
-      return;
-    }
+    // // Allowing admin to make too many connections for testing purposes
+    // if (!req.user.isAdmin() && this.countListenersForUser(req.user) > 10) {
+    //   res.status(429).json({err: 'Too many open polling requests'});
+    //   return;
+    // }
 
     res.set('Content-Type', "text/event-stream");
     res.write('retry: 1000\n');

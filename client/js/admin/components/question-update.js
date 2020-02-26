@@ -36,10 +36,11 @@ export default class QuestionUpdate extends BoundComponent {
       answers = [createAnswerObject(), createAnswerObject()],
       multiple = false,
       scored = true,
-      priority = false
+      priority = false,
+      codeAnswers = false,
     } = props;
 
-    this.state = {title, text, code, codeType, answers, multiple, scored, priority};
+    this.state = {title, text, code, codeType, answers, multiple, scored, codeAnswers, priority};
   }
   async onRemoveQuestion(event) {
     event.preventDefault();
@@ -67,7 +68,7 @@ export default class QuestionUpdate extends BoundComponent {
   }
   async onSubmit(event) {
     event.preventDefault();
-    const {title, text, code, codeType, answers, multiple, scored, priority} = this.state;
+    const {title, text, code, codeType, answers, multiple, scored, priority, codeAnswers} = this.state;
     const id = this.props.id;
 
     try {
@@ -77,7 +78,7 @@ export default class QuestionUpdate extends BoundComponent {
         headers: {'Content-Type': 'application/json'},
         body: JSON.stringify({
           title, text, code, codeType,
-          answers, multiple, scored, id, priority
+          answers, multiple, scored, id, priority, codeAnswers
         })
       });
 
@@ -139,6 +140,9 @@ export default class QuestionUpdate extends BoundComponent {
         <tr>
           <th>Scored:</th><td><input type="checkbox" checked={this.state.scored} onChange={this.linkState('scored')}/></td>
         </tr>
+        <tr>
+          <th>Code answers:</th><td><input type="checkbox" checked={this.state.codeAnswers} onChange={this.linkState('codeAnswers')}/></td>
+        </tr>
 
         <tr>
           <th>Priority:</th><td><input type="checkbox" checked={this.state.priority} onChange={this.linkState('priority')}/></td>
@@ -151,7 +155,7 @@ export default class QuestionUpdate extends BoundComponent {
             </th>
             <td>
               <div>
-                <input type="text" value={answer.text} onChange={this.linkState(`answers.${i}.text`)} />
+                <textarea type="text" value={answer.text} onChange={this.linkState(`answers.${i}.text`)}></textarea>
               </div>
 
               <label class="admin__question-correct-answer">

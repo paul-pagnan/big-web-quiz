@@ -1,0 +1,799 @@
+{
+  "Question": [
+    {
+      "title": "Warm Up",
+      "scored": false,
+      "priority": false,
+      "codeAnswers": false,
+      "_id": "5e5600e3cb8f2c9ca4788285",
+      "text": "What will this line of code produce?",
+      "code": "console.log(\"Hello World\");",
+      "codeType": "javascript",
+      "multiple": false,
+      "answers": [
+        {
+          "_id": "5e5600e3cb8f2c9ca4788288",
+          "text": "\"Goodbye World\"",
+          "correct": false
+        },
+        {
+          "_id": "5e5600e3cb8f2c9ca4788287",
+          "text": "\"Hello World\"",
+          "correct": true
+        },
+        {
+          "_id": "5e5600e3cb8f2c9ca4788286",
+          "text": "Nothing, the computation is too intense and the computer will melt",
+          "correct": false
+        }
+      ],
+      "key": "2cb7703a-8cd6-4414-ae2c-311cc77785ea",
+      "__v": 0
+    },
+    {
+      "title": "Warm Up",
+      "scored": false,
+      "priority": false,
+      "codeAnswers": false,
+      "_id": "5e560111cb8f2c9ca478828c",
+      "text": "What is the correct syntax for referring to an external script called \"xxx.js\"?",
+      "code": "",
+      "codeType": "",
+      "multiple": false,
+      "answers": [
+        {
+          "_id": "5e560111cb8f2c9ca478828f",
+          "text": "<script name=\"xxx.js\" />",
+          "correct": false
+        },
+        {
+          "_id": "5e560111cb8f2c9ca478828e",
+          "text": "<script href=\"xxx.js\" />",
+          "correct": false
+        },
+        {
+          "_id": "5e560111cb8f2c9ca478828d",
+          "text": "<script src=\"xxx.js\" />",
+          "correct": true
+        }
+      ],
+      "key": "a7f74815-b6f1-443a-8c1b-7ea2ed2d6674",
+      "__v": 0
+    },
+    {
+      "title": "Round 1.2",
+      "scored": true,
+      "priority": false,
+      "codeAnswers": true,
+      "_id": "5e5602a667978ebd901ed082",
+      "text": "Which of the following is correct JSON",
+      "code": "",
+      "codeType": "",
+      "multiple": true,
+      "answers": [
+        {
+          "_id": "5e5602a667978ebd901ed084",
+          "text": "{\n   \"person\": {\n\t\t\t\"name\": \"foo\",\n\t\t\t\"age\": 38,\n\t\t\t\"date_created\": ISODate(\"1981-01-01\")\n    }\n}",
+          "correct": false
+        },
+        {
+          "_id": "5e5602a667978ebd901ed083",
+          "text": "{\n   \"person\": {\n\t\t\t\"name\": \"foo\",\n\t\t\t\"age\": 38,\n\t\t\t\"date_created\": \"1981-01-01\"\n    }\n}",
+          "correct": true
+        },
+        {
+          "_id": "5e56042321ffd7c3cfeae561",
+          "text": "{\n   \"person\": {\n\t\t\t\"name\": \"foo\",\n\t\t\t\"age\": \"38\",\n\t\t\t\"date_created\": \"1981-01-01\",\n    }\n}",
+          "correct": false
+        },
+        {
+          "_id": "5e56042321ffd7c3cfeae560",
+          "text": "{\n   person: {\n\t\t\tname: \"foo\",\n\t\t\tage: \"38\",\n\t\t\tdate_created: \"1981-01-01\"\n    }\n}",
+          "correct": false
+        }
+      ],
+      "key": "921ac75c-8e92-4a9c-8d8b-460c092429b1",
+      "__v": 0
+    },
+    {
+      "title": "Round 1.4",
+      "scored": true,
+      "priority": false,
+      "codeAnswers": false,
+      "_id": "5e5605965799f6c74af95467",
+      "text": "In node what does LTS stand for",
+      "code": "",
+      "codeType": "",
+      "multiple": false,
+      "answers": [
+        {
+          "_id": "5e5605965799f6c74af9546b",
+          "text": "Language Terminal Support",
+          "correct": false
+        },
+        {
+          "_id": "5e5605965799f6c74af9546a",
+          "text": "Latest Transient Shipment",
+          "correct": false
+        },
+        {
+          "_id": "5e5605965799f6c74af95469",
+          "text": "Long Term Support",
+          "correct": true
+        },
+        {
+          "_id": "5e5605965799f6c74af95468",
+          "text": "Life Time Support",
+          "correct": false
+        }
+      ],
+      "key": "6c07a998-a9b7-4269-8e90-11d44776b4ed",
+      "__v": 0
+    },
+    {
+      "title": "Round 1",
+      "scored": true,
+      "priority": false,
+      "codeAnswers": false,
+      "_id": "5e5605b05799f6c74af9546c",
+      "text": "What js the current LTS of node (Feb 2020)",
+      "code": "",
+      "codeType": "",
+      "multiple": false,
+      "answers": [
+        {
+          "_id": "5e5605b05799f6c74af95470",
+          "text": "10.x",
+          "correct": false
+        },
+        {
+          "_id": "5e5605b05799f6c74af9546f",
+          "text": "11.x",
+          "correct": false
+        },
+        {
+          "_id": "5e5605b05799f6c74af9546e",
+          "text": "12.x",
+          "correct": true
+        },
+        {
+          "_id": "5e5605b05799f6c74af9546d",
+          "text": "13.x",
+          "correct": false
+        }
+      ],
+      "key": "28839aa2-7343-4b52-abb1-45107d139ba4",
+      "__v": 0
+    },
+    {
+      "title": "Round 1",
+      "scored": true,
+      "priority": false,
+      "codeAnswers": false,
+      "_id": "5e5605e55799f6c74af95475",
+      "text": "What is the current node version",
+      "code": "",
+      "codeType": "",
+      "multiple": false,
+      "answers": [
+        {
+          "_id": "5e5605e55799f6c74af95479",
+          "text": "10.x",
+          "correct": false
+        },
+        {
+          "_id": "5e5605e55799f6c74af95478",
+          "text": "11.x",
+          "correct": false
+        },
+        {
+          "_id": "5e5605e55799f6c74af95477",
+          "text": "12.x",
+          "correct": false
+        },
+        {
+          "_id": "5e5605e55799f6c74af95476",
+          "text": "13.x",
+          "correct": true
+        }
+      ],
+      "key": "0b75e713-aae8-47a2-a63d-9338dd0ed430",
+      "__v": 0
+    },
+    {
+      "title": "Round 2",
+      "scored": true,
+      "priority": false,
+      "codeAnswers": true,
+      "_id": "5e56060b5799f6c74af9547a",
+      "text": "Which of the following is an example of a Monad",
+      "code": "",
+      "codeType": "",
+      "multiple": false,
+      "answers": [
+        {
+          "_id": "5e56060b5799f6c74af9547e",
+          "text": "null",
+          "correct": false
+        },
+        {
+          "_id": "5e56060b5799f6c74af9547d",
+          "text": "interface foo { bar: string; }",
+          "correct": false
+        },
+        {
+          "_id": "5e56060b5799f6c74af9547c",
+          "text": "Maybe<string>",
+          "correct": true
+        },
+        {
+          "_id": "5e56060b5799f6c74af9547b",
+          "text": "number",
+          "correct": false
+        }
+      ],
+      "key": "0ba93533-009a-4f18-9d0a-997651fe9d96",
+      "__v": 0
+    },
+    {
+      "title": "Round 2",
+      "scored": true,
+      "priority": false,
+      "codeAnswers": true,
+      "_id": "5e56062b5799f6c74af9547f",
+      "text": "Which are examples of currying",
+      "code": "",
+      "codeType": "",
+      "multiple": false,
+      "answers": [
+        {
+          "_id": "5e56062b5799f6c74af95483",
+          "text": "add(1)(2)(3)",
+          "correct": true
+        },
+        {
+          "_id": "5e56062b5799f6c74af95482",
+          "text": "1.add(2).add(3)",
+          "correct": false
+        },
+        {
+          "_id": "5e56062b5799f6c74af95481",
+          "text": "new Sum(1).add(2)",
+          "correct": false
+        },
+        {
+          "_id": "5e56062b5799f6c74af95480",
+          "text": "console.log('Chicken tikka masala')",
+          "correct": false
+        }
+      ],
+      "key": "2a14e70e-e443-47e6-8793-a2a9d51b98d5",
+      "__v": 0
+    },
+    {
+      "title": "Round 2",
+      "scored": true,
+      "priority": false,
+      "codeAnswers": true,
+      "_id": "5e5606535799f6c74af95484",
+      "text": "Which are examples of chaining",
+      "code": "",
+      "codeType": "",
+      "multiple": true,
+      "answers": [
+        {
+          "_id": "5e5606535799f6c74af95488",
+          "text": "add(1)(2)(3)",
+          "correct": false
+        },
+        {
+          "_id": "5e5606535799f6c74af95487",
+          "text": "1.add(2).add(3)",
+          "correct": true
+        },
+        {
+          "_id": "5e5606535799f6c74af95486",
+          "text": "new Sum(1).add(2)",
+          "correct": true
+        },
+        {
+          "_id": "5e5606535799f6c74af95485",
+          "text": "console.log('⛓️')",
+          "correct": false
+        }
+      ],
+      "key": "736c9cd3-b295-4cfe-bf82-11c04e3bcc12",
+      "__v": 0
+    },
+    {
+      "title": "Round 2",
+      "scored": true,
+      "priority": false,
+      "codeAnswers": false,
+      "_id": "5e5606775799f6c74af95489",
+      "text": "Which of the following are pure functions",
+      "code": "",
+      "codeType": "",
+      "multiple": true,
+      "answers": [
+        {
+          "_id": "5e5606775799f6c74af9548d",
+          "text": "function print(a, b, c) {\n   console.log(`${a}, ${b}, ${c}`);\n} ",
+          "correct": false
+        },
+        {
+          "_id": "5e5606775799f6c74af9548c",
+          "text": "function addOne(obj) {\n   return ++obj.num;\n}",
+          "correct": false
+        },
+        {
+          "_id": "5e5606775799f6c74af9548b",
+          "text": "function abs(num) {\n\treturn Math.abs(num);\n}",
+          "correct": true
+        },
+        {
+          "_id": "5e5606775799f6c74af9548a",
+          "text": "function subtractOne(obj) {\n   return --({...obj}).num;\n}",
+          "correct": true
+        }
+      ],
+      "key": "75c9d52d-c446-4985-a59e-5fca6a71fad7",
+      "__v": 0
+    },
+    {
+      "title": "Round 2",
+      "scored": true,
+      "priority": false,
+      "codeAnswers": true,
+      "_id": "5e5607265799f6c74af9548e",
+      "text": "Which of the following are examples of closures",
+      "code": "",
+      "codeType": "",
+      "multiple": true,
+      "answers": [
+        {
+          "_id": "5e5607265799f6c74af95492",
+          "text": "function calc(value) {\n\tfunction addOne() {\n\t   return value += 1;\n\t}\n  return addOne()\n}\ncalc(1)(2);",
+          "correct": true
+        },
+        {
+          "_id": "5e5607265799f6c74af95491",
+          "text": "let value = 1;\nfunction add(num) {\n\tvalue += num;\n  return value;\n}\nfunction addTwo() {\n\tvalue += 2;\n}\n\nadd(2)\naddTwo()\nconsole.log(value);",
+          "correct": true
+        },
+        {
+          "_id": "5e5607265799f6c74af95490",
+          "text": "function addOne(num) {\n\treturn num + 1;\n}\nfunction addTwo(num) {\n\treturn num + 2;\n}\naddTwo(addOne(1));",
+          "correct": false
+        },
+        {
+          "_id": "5e5607265799f6c74af9548f",
+          "text": "const foo = () => (bar) => bar + \"foo\";\nfoo()('foo')",
+          "correct": true
+        }
+      ],
+      "key": "705ea80b-dce3-4966-a9fb-67b176f3b6ed",
+      "__v": 0
+    },
+    {
+      "title": "Round 2",
+      "scored": true,
+      "priority": false,
+      "codeAnswers": false,
+      "_id": "5e5609c39aef2dda3fe14afb",
+      "text": "What is the value of 'this'",
+      "code": "function foo() {\n    console.log(this.a);\n}\nconst obj = {\n    a: 1,\n};\nfoo.call(obj);",
+      "codeType": "javascript",
+      "multiple": false,
+      "answers": [
+        {
+          "_id": "5e5609c39aef2dda3fe14aff",
+          "text": "0",
+          "correct": false
+        },
+        {
+          "_id": "5e5609c39aef2dda3fe14afe",
+          "text": "1",
+          "correct": true
+        },
+        {
+          "_id": "5e5609c39aef2dda3fe14afd",
+          "text": "null",
+          "correct": false
+        },
+        {
+          "_id": "5e5609c39aef2dda3fe14afc",
+          "text": "undefined",
+          "correct": false
+        }
+      ],
+      "key": "82495c4c-113b-4f26-a330-30c76504c738",
+      "__v": 0
+    },
+    {
+      "title": "Round 3",
+      "scored": true,
+      "priority": false,
+      "codeAnswers": false,
+      "_id": "5e560a029aef2dda3fe14b00",
+      "text": "What is the value",
+      "code": "const val = true + 1 - false;\nconsole.log(val);",
+      "codeType": "javascript",
+      "multiple": false,
+      "answers": [
+        {
+          "_id": "5e560a029aef2dda3fe14b05",
+          "text": "false",
+          "correct": false
+        },
+        {
+          "_id": "5e560a029aef2dda3fe14b04",
+          "text": "NaN",
+          "correct": false
+        },
+        {
+          "_id": "5e560a029aef2dda3fe14b03",
+          "text": "null",
+          "correct": false
+        },
+        {
+          "_id": "5e560a029aef2dda3fe14b02",
+          "text": "2",
+          "correct": true
+        },
+        {
+          "_id": "5e560a029aef2dda3fe14b01",
+          "text": "1",
+          "correct": false
+        },
+        {
+          "_id": "5e560a0c9aef2dda3fe14b06",
+          "text": "undefined",
+          "correct": false
+        }
+      ],
+      "key": "9f2b732c-b24d-4aa5-a3e2-25759b806e2b",
+      "__v": 0
+    },
+    {
+      "title": "Round 3",
+      "scored": true,
+      "priority": false,
+      "codeAnswers": false,
+      "_id": "5e560a449aef2dda3fe14b0c",
+      "text": "What is the value",
+      "code": "const val = \"1\" + 1 - false;\nconsole.log(val);",
+      "codeType": "javascript",
+      "multiple": false,
+      "answers": [
+        {
+          "_id": "5e560a449aef2dda3fe14b11",
+          "text": "false",
+          "correct": false
+        },
+        {
+          "_id": "5e560a449aef2dda3fe14b10",
+          "text": "1",
+          "correct": false
+        },
+        {
+          "_id": "5e560a449aef2dda3fe14b0f",
+          "text": "11",
+          "correct": true
+        },
+        {
+          "_id": "5e560a449aef2dda3fe14b0e",
+          "text": "0",
+          "correct": false
+        },
+        {
+          "_id": "5e560a449aef2dda3fe14b0d",
+          "text": "NaN",
+          "correct": false
+        }
+      ],
+      "key": "2cd39255-751f-4150-be8d-ab94ab67bd2c",
+      "__v": 0
+    },
+    {
+      "title": "Round 3",
+      "scored": true,
+      "priority": false,
+      "codeAnswers": false,
+      "_id": "5e560a6a9aef2dda3fe14b17",
+      "text": "What is the value",
+      "code": "const val = 1 + !![];\nconsole.log(val);",
+      "codeType": "javascript",
+      "multiple": false,
+      "answers": [
+        {
+          "_id": "5e560a6a9aef2dda3fe14b1b",
+          "text": "true",
+          "correct": false
+        },
+        {
+          "_id": "5e560a6a9aef2dda3fe14b1a",
+          "text": "1",
+          "correct": false
+        },
+        {
+          "_id": "5e560a6a9aef2dda3fe14b19",
+          "text": "2",
+          "correct": true
+        },
+        {
+          "_id": "5e560a6a9aef2dda3fe14b18",
+          "text": "false",
+          "correct": false
+        }
+      ],
+      "key": "4bdaf2ec-0189-451d-8cf9-423dfd4b11fa",
+      "__v": 0
+    },
+    {
+      "title": "Round 3",
+      "scored": true,
+      "priority": false,
+      "codeAnswers": false,
+      "_id": "5e560a8f9aef2dda3fe14b1c",
+      "text": "What is the value",
+      "code": "const val = [1, 2, 3] + [4, 5, 6];\nconsole.log(val);",
+      "codeType": "javascript",
+      "multiple": false,
+      "answers": [
+        {
+          "_id": "5e560a8f9aef2dda3fe14b21",
+          "text": "[1, 2, 3, 4, 5, 6]",
+          "correct": false
+        },
+        {
+          "_id": "5e560a8f9aef2dda3fe14b20",
+          "text": "\"1,2,3,4,5,6\"",
+          "correct": false
+        },
+        {
+          "_id": "5e560a8f9aef2dda3fe14b1f",
+          "text": "\"1,2,34,5,6\"",
+          "correct": true
+        },
+        {
+          "_id": "5e560a8f9aef2dda3fe14b1e",
+          "text": "true",
+          "correct": false
+        },
+        {
+          "_id": "5e560a8f9aef2dda3fe14b1d",
+          "text": "undefined",
+          "correct": false
+        }
+      ],
+      "key": "fe03fb70-9996-49f1-bea4-654a0455a540",
+      "__v": 0
+    },
+    {
+      "title": "Round 3",
+      "scored": true,
+      "priority": false,
+      "codeAnswers": false,
+      "_id": "5e560ab09aef2dda3fe14b22",
+      "text": "What is the value",
+      "code": "const a = ['1', '2', '11', '12', '13'];\nconst b = a.map(parseInt);\nconsole.log(b)",
+      "codeType": "javascript",
+      "multiple": false,
+      "answers": [
+        {
+          "_id": "5e560ab09aef2dda3fe14b26",
+          "text": "[1, 2, 11, 12, 13]",
+          "correct": false
+        },
+        {
+          "_id": "5e560ab09aef2dda3fe14b25",
+          "text": "[1, NaN, 3, 5, 7]",
+          "correct": true
+        },
+        {
+          "_id": "5e560ab09aef2dda3fe14b24",
+          "text": "[NaN, NaN, NaN, NaN]",
+          "correct": false
+        },
+        {
+          "_id": "5e560ab09aef2dda3fe14b23",
+          "text": "Error - map expected a function",
+          "correct": false
+        }
+      ],
+      "key": "770326bd-5d0a-411e-846d-6df76a1de50f",
+      "__v": 0
+    },
+    {
+      "title": "Round 3",
+      "scored": true,
+      "priority": false,
+      "codeAnswers": false,
+      "_id": "5e560ac69aef2dda3fe14b27",
+      "text": "What is the value",
+      "code": "parseInt('abc123', 10)",
+      "codeType": "javascript",
+      "multiple": false,
+      "answers": [
+        {
+          "_id": "5e560ac69aef2dda3fe14b2b",
+          "text": "Error",
+          "correct": false
+        },
+        {
+          "_id": "5e560ac69aef2dda3fe14b2a",
+          "text": "123",
+          "correct": false
+        },
+        {
+          "_id": "5e560ac69aef2dda3fe14b29",
+          "text": "NaN",
+          "correct": true
+        },
+        {
+          "_id": "5e560ac69aef2dda3fe14b28",
+          "text": "null",
+          "correct": false
+        }
+      ],
+      "key": "1783b016-f402-4924-b77d-996159793d4b",
+      "__v": 0
+    },
+    {
+      "title": "Round 3",
+      "scored": true,
+      "priority": false,
+      "codeAnswers": false,
+      "_id": "5e560ade9aef2dda3fe14b2c",
+      "text": "What is the value",
+      "code": "parseInt('123abc', 10)",
+      "codeType": "javascript",
+      "multiple": false,
+      "answers": [
+        {
+          "_id": "5e560ade9aef2dda3fe14b30",
+          "text": "Error",
+          "correct": false
+        },
+        {
+          "_id": "5e560ade9aef2dda3fe14b2f",
+          "text": "123",
+          "correct": true
+        },
+        {
+          "_id": "5e560ade9aef2dda3fe14b2e",
+          "text": "NaN",
+          "correct": false
+        },
+        {
+          "_id": "5e560ade9aef2dda3fe14b2d",
+          "text": "null",
+          "correct": false
+        }
+      ],
+      "key": "889291e1-bc44-487b-99b7-409fd5df4ed8",
+      "__v": 0
+    },
+    {
+      "title": "Round 3",
+      "scored": true,
+      "priority": false,
+      "codeAnswers": false,
+      "_id": "5e560b009aef2dda3fe14b31",
+      "text": "What is the value of this",
+      "code": "function bar() {\n    this.a = 1;\n    function foo () {\n        console.log(this.a);\n    }\n    return foo;\n}\nbar()();",
+      "codeType": "javascript",
+      "multiple": false,
+      "answers": [
+        {
+          "_id": "5e560b009aef2dda3fe14b35",
+          "text": "null",
+          "correct": false
+        },
+        {
+          "_id": "5e560b009aef2dda3fe14b34",
+          "text": "1",
+          "correct": true
+        },
+        {
+          "_id": "5e560b009aef2dda3fe14b33",
+          "text": "undefined",
+          "correct": false
+        },
+        {
+          "_id": "5e560b009aef2dda3fe14b32",
+          "text": "Error. Cannot read a of undefined",
+          "correct": false
+        }
+      ],
+      "key": "1b480f6d-15b1-46db-aacd-a632bb7113b4",
+      "__v": 0
+    },
+    {
+      "title": "Round 3",
+      "scored": true,
+      "priority": false,
+      "codeAnswers": false,
+      "_id": "5e560b249aef2dda3fe14b36",
+      "text": "What is the value of this",
+      "code": "function bar() {\n    this.a = 1;\n    function foo () {\n        console.log(this.a);\n    }\n    return foo;\n}\nbar().bind({})();",
+      "codeType": "javascript",
+      "multiple": false,
+      "answers": [
+        {
+          "_id": "5e560b249aef2dda3fe14b3a",
+          "text": "undefined",
+          "correct": true
+        },
+        {
+          "_id": "5e560b249aef2dda3fe14b39",
+          "text": "null",
+          "correct": false
+        },
+        {
+          "_id": "5e560b249aef2dda3fe14b38",
+          "text": "1",
+          "correct": false
+        },
+        {
+          "_id": "5e560b249aef2dda3fe14b37",
+          "text": "Error. Cannot read a of undefined",
+          "correct": false
+        }
+      ],
+      "key": "d409f2cd-93f6-4217-b09b-f59985200d20",
+      "__v": 0
+    },
+    {
+      "title": "Round 3",
+      "scored": true,
+      "priority": false,
+      "codeAnswers": false,
+      "_id": "5e560b399aef2dda3fe14b3b",
+      "text": "What is the result",
+      "code": "[] == ![]",
+      "codeType": "javascript",
+      "multiple": false,
+      "answers": [
+        {
+          "_id": "5e560b399aef2dda3fe14b3d",
+          "text": "true",
+          "correct": true
+        },
+        {
+          "_id": "5e560b399aef2dda3fe14b3c",
+          "text": "false",
+          "correct": false
+        }
+      ],
+      "key": "fa378a92-744d-48e2-8944-bd01e421a6e3",
+      "__v": 0
+    },
+    {
+      "title": "Round 3",
+      "scored": true,
+      "priority": false,
+      "codeAnswers": false,
+      "_id": "5e560b4b9aef2dda3fe14b3e",
+      "text": "What is the value",
+      "code": "!!\"false\" == !!\"true\";",
+      "codeType": "javascript",
+      "multiple": false,
+      "answers": [
+        {
+          "_id": "5e560b4b9aef2dda3fe14b40",
+          "text": "true",
+          "correct": true
+        },
+        {
+          "_id": "5e560b4b9aef2dda3fe14b3f",
+          "text": "false",
+          "correct": false
+        }
+      ],
+      "key": "549410dc-38bc-4be7-9cfa-a0becddf7833",
+      "__v": 0
+    }
+  ]
+}

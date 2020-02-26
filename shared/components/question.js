@@ -103,12 +103,21 @@ export default class Question extends BoundComponent {
   render({
     id, title, text, multiple, answers, closed,
     showLiveResults, correctAnswers, code,
-    codeType, presentation
+    codeType, presentation,
+    codeAnswers
   }, {
     answersChecked, answersSubmitted, spinnerState,
     submittedAnswersThisSession
   }) {
-    const codeEl = code && <Code code={code} codeType={codeType}></Code>;
+    const codeEl = code && <div style='margin-bottom: 10px'><Code code={code} codeType={codeType}></Code></div>;
+
+    const getAnswer = (text) => {
+      if (codeAnswers) {
+        return <Code code={text} codeType='Javascript' className='question__answer-label-code'></Code>;
+      } else {
+        return <span class="question__answer-label-text">{text}</span>;
+      }
+    };
 
     const answersToCheck = closed ? answersSubmitted : answersChecked;
 
@@ -163,7 +172,7 @@ export default class Question extends BoundComponent {
                         'question__answer-label question__answer-label--correct' :
                         'question__answer-label question__answer-label--incorrect')
                     : 'question__answer-label'}>
-                    <span class="question__answer-label-text">{answer.text}</span>
+                    {getAnswer(answer.text)}
                   </label>
                 </div>
               )}

@@ -33,6 +33,7 @@ const questionSchema = mongoose.Schema({
   scored: {type: Boolean, default: true},
   // Shove it to the top of the list in admin view?
   priority: {type: Boolean, default: false, index: true},
+  codeAnswers: {type: Boolean, default: false, index: true},
   // Array of answers
   answers: [{
     text: {type: String, required: true},
@@ -133,6 +134,7 @@ export class Quiz {
         text: this._activeQuestion.text,
         code: this._activeQuestion.code,
         codeType: this._activeQuestion.codeType,
+        codeAnswers: this._activeQuestion.codeAnswers,
         multiple: this._activeQuestion.multiple,
         scored: this._activeQuestion.scored,
         // Don't want to send which answers are correct all the time,

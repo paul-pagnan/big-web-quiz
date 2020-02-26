@@ -67,6 +67,7 @@ function upsertQuestion(data) {
     multiple: !!data.multiple,
     scored: !!data.scored,
     priority: !!data.priority,
+    codeAnswers: !!data.codeAnswers,
     answers: data.answers
   };
 

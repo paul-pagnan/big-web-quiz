@@ -133,3 +133,15 @@
   }
 
 }
+
+
+.question__answer-label-code {
+  width: 100%;
+}
+
+.question__answer-label-code pre {
+  width: 100% !important;
+  max-width: 100% !important;
+  overflow-x: auto;
+
+}

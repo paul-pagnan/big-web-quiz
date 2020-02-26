@@ -54,10 +54,10 @@ export default class LongPollers {
     }
 
     // Allowing admin to make too many connections for testing purposes
-    if (!req.user.isAdmin() && this.countPollersForUser(req.user) > 10) {
-      res.status(429).json({err: 'Too many open polling requests'});
-      return;
-    }
+    // if (!req.user.isAdmin() && this.countPollersForUser(req.user) > 10) {
+    //   res.status(429).json({err: 'Too many open polling requests'});
+    //   return;
+    // }
 
     this._pollers.push({req, res});
 

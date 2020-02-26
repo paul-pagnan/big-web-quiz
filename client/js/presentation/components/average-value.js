@@ -16,6 +16,7 @@
 */
 import { h } from 'preact';
 import BoundComponent from '../../../../shared/components/bound-component';
+import Code from '../../../../shared/components/code';
 
 export default class AverageValue extends BoundComponent {
 
@@ -159,7 +160,8 @@ export default class AverageValue extends BoundComponent {
     requestAnimationFrame(_ => this.update());
   }
 
-  render({id, targetValue, color, text, questionClosed}, {value, visible}) {
+  render({id, targetValue, color, text, questionClosed, codeAnswers}, {value, visible}) {
+    const elem = codeAnswers ? <Code code={text} codeType='Javascript' style='font-size: 14px;'></Code> : text;
     return (
       <div class={
         visible ?
@@ -172,7 +174,7 @@ export default class AverageValue extends BoundComponent {
             'average-value__text average-value__text--visible' :
             'average-value__text'
         }>
-          {text}
+          {elem}
         </div>
       </div>
     );
